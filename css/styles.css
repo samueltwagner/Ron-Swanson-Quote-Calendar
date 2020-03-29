@@ -2,51 +2,47 @@
 
 body {
   font-family: Montserrat, sans-serif;
+  font-size: 18px;
 }
 main {
   display: flex;
   flex-flow: column wrap;
 }
 
-.hidden {
-  display: none;
+#header h1 {
+  position: absolute;
+  top: 5%;
+  left: 25%;
 }
 
-#shiplist td {
+#header h2 {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+
+#quotelist td {
   cursor: pointer;
 }
 
-#detailsbox {
-  flex: 1 0 15em;
-  padding: 1em;
-  text-align: center;
-  border: 2px solid;
-}
-
-#detailsbox dl {
-  border: 1px solid;
-  text-align: left;
-}
-
-#shiplist {
-  /* display: flex; */
+#quotelist {
   flex-flow: row wrap;
   list-style-type: none;
 }
 
-#shiplist thead {
+#quotelist thead {
   background-color: lightgray;
 }
 
-#shiplist tr {
+#quotelist tr {
   border: 1px solid;
-  padding: 0.5em;
-  height: 44px;
+  padding: 5px;
+  height: 60px;
 }
-#shiplist tr:nth-child(even) {
-  background-color: azure;
+#quotelist tr:nth-child(even) {
+  background-color: rgb(255, 247, 240);
 }
-#shiplist tr:hover {
+#quotelist td:hover {
   background-color: bisque;
-  text-decoration: underline;
+  text-decoration: none;
 }
