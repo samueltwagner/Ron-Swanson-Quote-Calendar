@@ -40,13 +40,13 @@ function getJSON(url) {
         let listItem = document.createElement('tr');
         // fill column
         listItem.innerHTML = `
-            <td>${monCol} ${data[a]}</td>
-            <td>${tueCol} ${data[b]}</td>
-            <td>${wedCol} ${data[c]}</td>
-            <td>${thuCol} ${data[d]}</td>
-            <td>${friCol} ${data[e]}</td>
-            <td>${satCol} ${data[f]}</td>
-            <td>${sunCol} ${data[g]}</td>`;
+            <td onclick="changeBox()">${monCol} ${data[a]}</td>
+            <td onclick="changeBox()">${tueCol} ${data[b]}</td>
+            <td onclick="changeBox()">${wedCol} ${data[c]}</td>
+            <td onclick="changeBox()">${thuCol} ${data[d]}</td>
+            <td onclick="changeBox()">${friCol} ${data[e]}</td>
+            <td onclick="changeBox()">${satCol} ${data[f]}</td>
+            <td onclick="changeBox()">${sunCol} ${data[g]}</td>`;
     
         //add the list item to the list
         tBody.appendChild(listItem);
@@ -76,5 +76,6 @@ function getJSON(url) {
       console.log(data[0]);
     });
   }
+
 
   showQuotes();
